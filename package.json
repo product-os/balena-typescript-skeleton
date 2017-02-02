@@ -1,35 +1,35 @@
 {
-  "name": "resin-typescript-skeleton",
-  "version": "0.0.1",
-  "description": "Skeleton template for a Resin TypeScript project",
-  "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
-  "preferGlobal": true,
-  "types": "build/**/*.d.ts",
-  "keywords": [
-    "resin",
-    "typescript"
-  ],
-  "author": "Heds Simons <hedley@resin.io>",
-  "license": "Apache-2.0",
-  "main": "./build/implement-me.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/resin-io/resin-typescript-skeleton.git"
-  },
-  "bugs": {
-    "url": "https://github.com/resin-io/resin-typescript-skeleton/issues"
-  },
-  "scripts": {
-    "build": "gulp build"
-  },
-  "devDependencies": {
-    "@types/node": "^6.0.48",
-    "gulp": "^3.9.1",
-    "gulp-util": "^3.0.7",
-    "gulp-typescript": "^3.1.4",
-    "gulp-sourcemaps": "^2.3.1",
-    "typescript": "^2.1.5"
-  },
-  "dependencies": {
-  }
+    "name": "resin-typescript-skeleton",
+    "version": "0.0.1",
+    "description": "Skeleton template for a Resin TypeScript project",
+    "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
+    "types": "build/index.d.ts",
+    "keywords": [
+        "resin",
+        "typescript"
+    ],
+    "author": "Heds Simons <hedley@resin.io>",
+    "license": "Apache-2.0",
+    "main": "lib/index.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/resin-io/resin-typescript-skeleton.git"
+    },
+    "bugs": {
+        "url": "https://github.com/resin-io/resin-typescript-skeleton/issues"
+    },
+    "scripts": {
+        "start": "node build/index.js",
+        "build": "gulp build"
+    },
+    "devDependencies": {
+        "@types/node": "^6.0.48",
+        "gulp": "^3.9.1",
+        "gulp-util": "^3.0.7",
+        "gulp-typescript": "^3.1.4",
+        "gulp-sourcemaps": "^2.3.1",
+        "typescript": "^2.1.5"
+    },
+    "dependencies": {
+    }
 }
