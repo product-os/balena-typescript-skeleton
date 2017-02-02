@@ -5,17 +5,14 @@ const sourcemaps = require('gulp-sourcemaps');
 const tsProject = typescript.createProject('tsconfig.json');
 
 const OPTIONS = {
-    header: true,
     files: {
-        typescript: [ 'lib/**/*.ts' ],
         declarations: [ 'lib/**/*.d.ts' ]
-    },
-    base: 'lib'
+    }
 }
 
 // Compile the TS sources
 gulp.task('typescript', () => {
-    gulp.src(OPTIONS.files.typescript)
+    tsProject.src()
         .pipe(sourcemaps.init())
         .pipe(tsProject()).on('error', gutil.log)
         .pipe(sourcemaps.write('./', {
