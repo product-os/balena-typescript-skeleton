@@ -3,20 +3,20 @@
     "version": "0.0.1",
     "description": "Skeleton template for a Resin TypeScript project",
     "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
-    "types": "build/index.d.ts",
+    "main": "lib/index.ts",
+    "types": "lib/index.d.ts",
     "keywords": [
         "resin",
         "typescript"
     ],
-    "author": "Heds Simons <hedley@resin.io>",
+    "author": "",
     "license": "Apache-2.0",
-    "main": "lib/index.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/resin-io/resin-typescript-skeleton.git"
+        "url": ""
     },
     "bugs": {
-        "url": "https://github.com/resin-io/resin-typescript-skeleton/issues"
+        "url": ""
     },
     "scripts": {
         "start": "node build/index.js",
