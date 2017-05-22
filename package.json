@@ -4,7 +4,7 @@
     "description": "Skeleton template for a Resin TypeScript project",
     "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
     "main": "lib/index.ts",
-    "types": "lib/index.d.ts",
+    "types": "lib/index.ts",
     "keywords": [
         "resin",
         "typescript"
