@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Skeleton template for a Resin TypeScript project",
     "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
-    "main": "lib/index.ts",
+    "main": "build/index.js",
     "types": "lib/index.ts",
     "keywords": [
         "resin",
