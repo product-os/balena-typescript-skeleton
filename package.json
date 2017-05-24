@@ -1,35 +1,37 @@
 {
-    "name": "resin-typescript-skeleton",
-    "version": "0.0.1",
-    "description": "Skeleton template for a Resin TypeScript project",
-    "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
-    "main": "build/index.js",
-    "types": "lib/index.ts",
-    "keywords": [
-        "resin",
-        "typescript"
-    ],
-    "author": "",
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "bugs": {
-        "url": ""
-    },
-    "scripts": {
-        "start": "node build/index.js",
-        "build": "gulp build"
-    },
-    "devDependencies": {
-        "@types/node": "^6.0.48",
-        "gulp": "^3.9.1",
-        "gulp-util": "^3.0.7",
-        "gulp-typescript": "^3.1.4",
-        "gulp-sourcemaps": "^2.3.1",
-        "typescript": "^2.1.5"
-    },
-    "dependencies": {
-    }
+  "name": "resin-typescript-skeleton",
+  "version": "0.0.1",
+  "description": "Skeleton template for a Resin TypeScript project",
+  "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
+  "main": "build/index.js",
+  "types": "lib/index.ts",
+  "keywords": [
+    "resin",
+    "typescript"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "gulp build",
+    "prepublish": "require-npm4-to-publish",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.48",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.3.1",
+    "gulp-typescript": "^3.1.4",
+    "gulp-util": "^3.0.7",
+    "require-npm4-to-publish": "^1.0.0",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {}
 }
