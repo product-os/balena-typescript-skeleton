@@ -21,6 +21,7 @@
   "scripts": {
     "start": "node build/index.js",
     "build": "gulp build",
+    "watch": "gulp watch",
     "prepublish": "require-npm4-to-publish",
     "prepublishOnly": "npm run build"
   },
@@ -30,6 +31,7 @@
     "gulp-sourcemaps": "^2.3.1",
     "gulp-typescript": "^3.1.4",
     "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.11",
     "require-npm4-to-publish": "^1.0.0",
     "typescript": "^2.1.5"
   },
