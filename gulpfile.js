@@ -2,7 +2,9 @@ const gulp = require('gulp');
 const gutil = require('gulp-util');
 const typescript = require('gulp-typescript');
 const sourcemaps = require('gulp-sourcemaps');
+const watch = require('gulp-watch');
 const tsProject = typescript.createProject('tsconfig.json');
+const srcGlobs = tsProject.config.include;
 
 // Compile the TS sources
 gulp.task('typescript', () => {
@@ -16,12 +18,17 @@ gulp.task('typescript', () => {
 // Copy any pre-defined declarations
 gulp.task('copydecs', () => {
 	const decDirs = [];
-	tsProject.config.include.forEach((dir) => {
+	srcGlobs.forEach((dir) => {
 		decDirs.push(`${dir.split('/')[0]}/**/*.d.ts`);
 	});
 	gulp.src(decDirs)
 	.pipe(gulp.dest(tsProject.options.declarationDir));
 });
 
-gulp.task('build', [ 'typescript', 'copydecs' ]);
+gulp.task('watch', () => {
+	watch(srcGlobs, () => {
+		gulp.start('build');
+	});
+});
 
+gulp.task('build', [ 'typescript', 'copydecs' ]);
