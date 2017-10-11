@@ -1,13 +1,13 @@
 export interface ImplementMe {
-    myFunc(): string;
+	myFunc(): string;
 }
 
 const moo = 1;
 
 export class ImplementClass implements ImplementMe {
-    public myFunc() {
-        return `I need implementing! ${moo}`;
-    }
+	public myFunc() {
+		return `I need implementing! ${moo}`;
+	}
 }
 
 console.log(new ImplementClass().myFunc());
