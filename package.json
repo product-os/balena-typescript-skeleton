@@ -22,8 +22,11 @@
     "start": "node build/index.js",
     "build": "gulp build",
     "watch": "gulp watch",
+    "lint": "tslint -t stylish -c tslint.json \"lib/**/*.ts\"",
+    "precommit": "lint-staged",
     "prepublish": "require-npm4-to-publish",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prettify": "prettier --write \"lib/**/*.ts\""
   },
   "devDependencies": {
     "@types/node": "^6.0.48",
@@ -32,8 +35,18 @@
     "gulp-typescript": "^3.1.4",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.11",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.4",
     "require-npm4-to-publish": "^1.0.0",
+    "tslint": "^5.7.0",
     "typescript": "^2.1.5"
   },
-  "dependencies": {}
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "tslint -t stylish",
+      "git add"
+    ]
+  }
 }
