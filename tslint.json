@@ -41,7 +41,8 @@
           "arrays": "always",
           "functions": "always",
           "typeLiterals": "ignore"
-        }
+        },
+        "esSpecCompliant": true
       }
     ]
   }
