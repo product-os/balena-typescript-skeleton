@@ -1,6 +1,6 @@
 {
   "name": "resin-typescript-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Skeleton template for a Resin TypeScript project",
   "homepage": "https://github.com/resin-io/resin-typescript-skeleton#readme",
   "main": "build/index.js",
