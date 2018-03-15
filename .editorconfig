@@ -17,3 +17,4 @@ trim_trailing_whitespace = false
 
 [*.ts]
 indent_size = 4
+indent_style = tab
