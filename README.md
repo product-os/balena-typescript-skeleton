@@ -1,9 +1,9 @@
 # Skeleton Project
 
-This is a skeleton template for a TypeScript project, containing all the default files and settings required for a balena project. It will build code via `gulp` (there is also a default Visual Code task for this on starting the debugger).
+This is a skeleton template for a TypeScript library project, containing all the default files and settings required for a balena project.
+As a result package-lock files are disabled so that upstream dependency issues are surfaces on our CI.
+In case that you are implementing a standalone project, you can enable them by deleting the `.npmrc`.
 
-Modify the `package.json`, `.vscode/launch.json` and README.md file as required, `npm install`, then implement code in the `lib` directory.
-
-Note that `@types` dependencies are currently in the `devDependencies` section of `package.json`. This is because this template is considered a stand-alone application. Should it be intended to be a library then move the `@types` to the `dependencies` section instead.
+Modify the `package.json`, and README.md file as required, `npm install`, then implement code in the `lib` directory. 
 
 Compiled code will be output into the `build` directory (transpiled JS, declaration files and source maps).
