@@ -4,7 +4,7 @@
   "description": "Skeleton template for a balena TypeScript project",
   "homepage": "https://github.com/balena-io/balena-typescript-skeleton#readme",
   "main": "build/index.js",
-  "types": "lib/index.ts",
+  "types": "build/index.d.ts",
   "keywords": [
     "balena",
     "typescript"
@@ -18,35 +18,22 @@
   "bugs": {
     "url": "https://github.com/balena-io/balena-typescript-skeleton/issues"
   },
+  "files": [
+    "build/"
+  ],
   "scripts": {
-    "start": "node build/index.js",
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "lint": "tslint -t stylish -c tslint.json \"lib/**/*.ts\"",
-    "precommit": "lint-staged",
-    "prepublish": "require-npm4-to-publish",
-    "prepublishOnly": "npm run build",
-    "prettify": "prettier --write \"lib/**/*.ts\""
+    "clean": "rimraf build",
+    "build": "npm run clean && tsc",
+    "lint": "balena-lint --typescript lib",
+    "lint-fix": "balena-lint --typescript --fix lib",
+    "test": "npm run build && npm run lint",
+    "prepack": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "^6.0.48",
-    "gulp": "^3.9.1",
-    "gulp-sourcemaps": "^2.3.1",
-    "gulp-typescript": "^3.1.4",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.11",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.2.3",
-    "prettier": "^1.7.4",
-    "require-npm4-to-publish": "^1.0.0",
-    "tslint": "^5.8.0",
-    "typescript": "^2.1.5"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "prettier --write",
-      "tslint -t stylish",
-      "git add"
-    ]
+    "@balena/lint": "^5.0.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.3"
   }
 }
