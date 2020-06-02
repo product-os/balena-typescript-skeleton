@@ -24,16 +24,28 @@
   "scripts": {
     "clean": "rimraf build",
     "build": "npm run clean && tsc",
-    "lint": "balena-lint --typescript lib",
-    "lint-fix": "balena-lint --typescript --fix lib",
-    "test": "npm run build && npm run lint",
+    "lint": "balena-lint --typescript lib tests",
+    "lint-fix": "balena-lint --typescript --fix lib tests",
+    "test:node": "mocha -r ts-node/register --reporter spec tests/**/*.spec.ts",
+    "test:browser": "karma start",
+    "test": "npm run build && npm run lint && npm run test:node && npm run test:browser",
+    "test:fast": "npm run build && npm run test:node",
     "prepack": "npm run build"
   },
   "devDependencies": {
     "@balena/lint": "^5.0.4",
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^7.0.2",
+    "balena-config-karma": "^2.3.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "husky": "^4.2.5",
+    "karma": "^5.0.9",
     "lint-staged": "^10.1.7",
+    "mocha": "^7.2.0",
     "rimraf": "^3.0.2",
+    "ts-node": "^8.10.1",
     "typescript": "^3.9.3"
   }
 }
