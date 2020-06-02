@@ -1,13 +1,11 @@
 export interface ImplementMe {
-	myFunc(): string;
+	myFunc(): Promise<string>;
 }
 
 const moo = 1;
 
 export class ImplementClass implements ImplementMe {
-	public myFunc() {
+	public async myFunc() {
 		return `I need implementing! ${moo}`;
 	}
 }
-
-console.log(new ImplementClass().myFunc());
