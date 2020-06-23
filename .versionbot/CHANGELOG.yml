@@ -1,1 +1,10 @@
-
+- commits:
+    - subject: Add .versionbot/CHANGELOG.yml
+      hash: 0b4f352987dea667912f5dcfb31e3a8079d3cf29
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+  version: 2.0.1
+  date: 2020-06-23T12:04:26.329Z
