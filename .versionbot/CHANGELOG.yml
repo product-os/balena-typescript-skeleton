@@ -1,7 +1,18 @@
 - commits:
-    - subject: 'minor: update dependencies'
+    - subject: "patch: Add lockfile-lint"
+      hash: 8d679662b6b15bd6ef772b1a9220ff1d3ca4f677
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 2.1.1
+  date: 2022-02-24T15:28:53.390Z
+- commits:
+    - subject: "minor: update dependencies"
       hash: 54aafb82f076e480f3912254f0f7bd2c09aff0c9
-      body: ''
+      body: ""
       footer: {}
       author: Thomas Manning
       nested: []
@@ -10,7 +21,7 @@
 - commits:
     - subject: Add .versionbot/CHANGELOG.yml
       hash: 0b4f352987dea667912f5dcfb31e3a8079d3cf29
-      body: ''
+      body: ""
       footer:
         Change-type: patch
         change-type: patch
