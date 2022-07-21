@@ -1,7 +1,32 @@
 - commits:
-    - subject: 'minor: update dependencies'
+    - subject: Update typescript and ts-node
+      hash: 960d4ca62d4e45b91a3e1fa66d6afbbeeb1ed7ab
+      body: >
+        The current typescript/ts-node combination is not working. Out of the
+
+        box runinng the tests fails with
+
+
+        ```
+
+        Error: Debug Failure. False expression: Non-string value passed to `ts.resolveTypeReferenceDirective`, likely by a wrapping package working with an outdated `resolveTypeReferenceDirectives` signature. This is probably not a problem in TS itself.
+
+        ```
+
+
+        Updating both packages resolves the issue.
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Felipe Lalanne
+      nested: []
+  version: 2.2.0
+  title: "'Update typescript and ts-node'"
+  date: 2022-07-20T21:31:17.808Z
+- commits:
+    - subject: "minor: update dependencies"
       hash: 54aafb82f076e480f3912254f0f7bd2c09aff0c9
-      body: ''
+      body: ""
       footer: {}
       author: Thomas Manning
       nested: []
@@ -10,7 +35,7 @@
 - commits:
     - subject: Add .versionbot/CHANGELOG.yml
       hash: 0b4f352987dea667912f5dcfb31e3a8079d3cf29
-      body: ''
+      body: ""
       footer:
         Change-type: patch
         change-type: patch
