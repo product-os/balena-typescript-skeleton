@@ -46,7 +46,7 @@
     "karma": "^6.3.2",
     "lint-staged": "^15.0.2",
     "mocha": "^10.2.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
