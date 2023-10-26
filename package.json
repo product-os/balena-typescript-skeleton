@@ -44,7 +44,7 @@
     "chai-as-promised": "^7.1.1",
     "husky": "^8.0.0",
     "karma": "^6.3.2",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^15.0.2",
     "mocha": "^10.2.0",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
