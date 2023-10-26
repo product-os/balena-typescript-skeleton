@@ -3,13 +3,14 @@
   "version": "2.2.0",
   "description": "Skeleton template for a balena TypeScript project",
   "homepage": "https://github.com/balena-io/balena-typescript-skeleton#readme",
+  "private": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "keywords": [
     "balena",
     "typescript"
   ],
-  "author": "",
+  "author": "Balena Inc. <hello@balena.io>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
