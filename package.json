@@ -24,9 +24,9 @@
   ],
   "scripts": {
     "clean": "rimraf build",
-    "build": "npm run clean && tsc",
-    "lint": "balena-lint --typescript lib tests",
-    "lint-fix": "balena-lint --typescript --fix lib tests",
+    "build": "npm run clean && tsc --project tsconfig.release.json",
+    "lint": "balena-lint lib tests",
+    "lint-fix": "balena-lint --fix lib tests",
     "test:node": "mocha -r ts-node/register --reporter spec tests/**/*.spec.ts",
     "test:browser": "karma start",
     "test": "npm run build && npm run lint && npm run test:node && npm run test:browser",
@@ -34,20 +34,20 @@
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "@balena/lint": "^5.4.2",
+    "@balena/lint": "^7.2.1",
     "@types/chai": "^4.2.18",
     "@types/chai-as-promised": "^7.1.4",
-    "@types/mocha": "^8.2.2",
-    "balena-config-karma": "^3.0.0",
+    "@types/mocha": "^10.0.3",
+    "balena-config-karma": "^4.0.2",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "husky": "^4.2.5",
     "karma": "^6.3.2",
     "lint-staged": "^11.0.0",
-    "mocha": "^8.4.0",
+    "mocha": "^10.2.0",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
-    "typescript": "^4.7.4"
+    "typescript": "^5.2.2"
   },
   "versionist": {
     "publishedAt": "2022-07-20T21:31:17.871Z"
