@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update rimraf to v5
+      hash: 18750554393d311a2870bc8b2e7154cae6b955f3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+    - subject: Update lint-staged to v15
+      hash: 28e5597eda171c874d4e4d85281fcf1ee26fc76e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+    - subject: Update husky to v8
+      hash: 9267eeccc0c368e4539d447b72387157df246c4a
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Felipe Lalanne
+      nested: []
+    - subject: Update balena lint and other ts dependencies
+      hash: b32c19a43bd0276fc526309c2ca59e1d5685a24e
+      body: |
+        Updates
+
+        - balena-lint
+        - typescript
+        - mocha
+        - balena-config-karma
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+    - subject: Flowzonify
+      hash: a0e3d7d7915daeb460c692633fdb627bf2fe8746
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Felipe Lalanne
+      nested: []
+  version: 2.3.0
+  title: ""
+  date: 2023-10-30T14:57:41.630Z
+- commits:
     - subject: Update typescript and ts-node
       hash: 960d4ca62d4e45b91a3e1fa66d6afbbeeb1ed7ab
       body: >

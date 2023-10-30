@@ -1,6 +1,6 @@
 {
   "name": "balena-typescript-skeleton",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Skeleton template for a balena TypeScript project",
   "homepage": "https://github.com/balena-io/balena-typescript-skeleton#readme",
   "private": true,
@@ -51,6 +51,6 @@
     "typescript": "^5.2.2"
   },
   "versionist": {
-    "publishedAt": "2022-07-20T21:31:17.871Z"
+    "publishedAt": "2023-10-30T14:57:41.744Z"
   }
 }
