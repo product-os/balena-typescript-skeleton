@@ -19,5 +19,3 @@ After cloning & scaffolding the repository
 * Set the appropriate .github/CODEOWNERS.
 * Push the scaffolded project to `master`
 * Create a new branch and open a PR for it.
-* After balenaCI picks up the PR, go to the repository's settings page and add a
-  `master` branch protection rule and mark the balenaCI checks as required.
